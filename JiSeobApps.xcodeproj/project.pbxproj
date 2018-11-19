@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B2B1C162193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B1C152193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift */; };
+		6B2B1C192193D820005AF8F2 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B1C172193D820005AF8F2 /* SpeechRecognitionService.swift */; };
+		6B2B1C1B2193D82C005AF8F2 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2B1C1A2193D82C005AF8F2 /* AudioController.swift */; };
+		6B62A63321A2503900B5A444 /* AnimationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62A63221A2503900B5A444 /* AnimationCollection.swift */; };
+		6B62A63521A253D000B5A444 /* AnimationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B62A63421A253D000B5A444 /* AnimationsVC.swift */; };
+		6B70DD6D2192AEF500FDD1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD6C2192AEF500FDD1F2 /* AppDelegate.swift */; };
+		6B70DD6F2192AEF500FDD1F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD6E2192AEF500FDD1F2 /* ViewController.swift */; };
+		6B70DD722192AEF500FDD1F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B70DD702192AEF500FDD1F2 /* Main.storyboard */; };
+		6B70DD752192AEF500FDD1F2 /* JiSeobApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD732192AEF500FDD1F2 /* JiSeobApps.xcdatamodeld */; };
+		6B70DD772192AEF600FDD1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B70DD762192AEF600FDD1F2 /* Assets.xcassets */; };
+		6B70DD7A2192AEF600FDD1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B70DD782192AEF600FDD1F2 /* LaunchScreen.storyboard */; };
+		6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD812192AFA000FDD1F2 /* SturctList.swift */; };
+		6B70DD852192AFA000FDD1F2 /* EmbedSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD822192AFA000FDD1F2 /* EmbedSpeech.swift */; };
+		6B70DD862192AFA000FDD1F2 /* GoogleSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */; };
+		A8D57C6936A5F03DF52B8161 /* Pods_JiSeobApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiSeobApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2B1C152193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSpeechStreamingVC.swift; sourceTree = "<group>"; };
+		6B2B1C172193D820005AF8F2 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		6B2B1C182193D820005AF8F2 /* Speech-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Speech-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B2B1C1A2193D82C005AF8F2 /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		6B62A63221A2503900B5A444 /* AnimationCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCollection.swift; sourceTree = "<group>"; };
+		6B62A63421A253D000B5A444 /* AnimationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsVC.swift; sourceTree = "<group>"; };
+		6B70DD692192AEF500FDD1F2 /* JiSeobApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiSeobApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B70DD6C2192AEF500FDD1F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B70DD6E2192AEF500FDD1F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B70DD712192AEF500FDD1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B70DD742192AEF500FDD1F2 /* JiSeobApps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JiSeobApps.xcdatamodel; sourceTree = "<group>"; };
+		6B70DD762192AEF600FDD1F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B70DD792192AEF600FDD1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B70DD7B2192AEF600FDD1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B70DD812192AFA000FDD1F2 /* SturctList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SturctList.swift; sourceTree = "<group>"; };
+		6B70DD822192AFA000FDD1F2 /* EmbedSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedSpeech.swift; sourceTree = "<group>"; };
+		6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSpeech.swift; sourceTree = "<group>"; };
+		7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.release.xcconfig"; sourceTree = "<group>"; };
+		9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B70DD662192AEF500FDD1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D57C6936A5F03DF52B8161 /* Pods_JiSeobApps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25DFFF0F4CD3C9BA5259F2F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63CD4676DAC8D27B93216270 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */,
+				7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B2B1C1C2193DEF5005AF8F2 /* PodData */ = {
+			isa = PBXGroup;
+			children = (
+				6B2B1C182193D820005AF8F2 /* Speech-Bridging-Header.h */,
+				6B2B1C172193D820005AF8F2 /* SpeechRecognitionService.swift */,
+				6B2B1C1A2193D82C005AF8F2 /* AudioController.swift */,
+			);
+			path = PodData;
+			sourceTree = "<group>";
+		};
+		6B62A63621A2549600B5A444 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				6B62A63221A2503900B5A444 /* AnimationCollection.swift */,
+				6B62A63421A253D000B5A444 /* AnimationsVC.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		6B70DD602192AEF500FDD1F2 = {
+			isa = PBXGroup;
+			children = (
+				6B70DD6B2192AEF500FDD1F2 /* JiSeobApps */,
+				6B70DD6A2192AEF500FDD1F2 /* Products */,
+				63CD4676DAC8D27B93216270 /* Pods */,
+				25DFFF0F4CD3C9BA5259F2F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B70DD6A2192AEF500FDD1F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B70DD692192AEF500FDD1F2 /* JiSeobApps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B70DD6B2192AEF500FDD1F2 /* JiSeobApps */ = {
+			isa = PBXGroup;
+			children = (
+				6B70DD6C2192AEF500FDD1F2 /* AppDelegate.swift */,
+				6B70DD6E2192AEF500FDD1F2 /* ViewController.swift */,
+				6B62A63621A2549600B5A444 /* Animations */,
+				6B70DD872192AFA600FDD1F2 /* Speech */,
+				6B70DD702192AEF500FDD1F2 /* Main.storyboard */,
+				6B70DD762192AEF600FDD1F2 /* Assets.xcassets */,
+				6B70DD782192AEF600FDD1F2 /* LaunchScreen.storyboard */,
+				6B70DD7B2192AEF600FDD1F2 /* Info.plist */,
+				6B70DD732192AEF500FDD1F2 /* JiSeobApps.xcdatamodeld */,
+			);
+			path = JiSeobApps;
+			sourceTree = "<group>";
+		};
+		6B70DD872192AFA600FDD1F2 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				6B70DD822192AFA000FDD1F2 /* EmbedSpeech.swift */,
+				6B2B1C152193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift */,
+				6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */,
+				6B70DD812192AFA000FDD1F2 /* SturctList.swift */,
+				6B2B1C1C2193DEF5005AF8F2 /* PodData */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B70DD682192AEF500FDD1F2 /* JiSeobApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B70DD7E2192AEF600FDD1F2 /* Build configuration list for PBXNativeTarget "JiSeobApps" */;
+			buildPhases = (
+				D86A2AAD200B644975775979 /* [CP] Check Pods Manifest.lock */,
+				6B70DD652192AEF500FDD1F2 /* Sources */,
+				6B70DD662192AEF500FDD1F2 /* Frameworks */,
+				6B70DD672192AEF500FDD1F2 /* Resources */,
+				4078171CC218D5C85DC8A58C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiSeobApps;
+			productName = JiSeobApps;
+			productReference = 6B70DD692192AEF500FDD1F2 /* JiSeobApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B70DD612192AEF500FDD1F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = kimjiseob;
+				TargetAttributes = {
+					6B70DD682192AEF500FDD1F2 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 6B70DD642192AEF500FDD1F2 /* Build configuration list for PBXProject "JiSeobApps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B70DD602192AEF500FDD1F2;
+			productRefGroup = 6B70DD6A2192AEF500FDD1F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B70DD682192AEF500FDD1F2 /* JiSeobApps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B70DD672192AEF500FDD1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B70DD7A2192AEF600FDD1F2 /* LaunchScreen.storyboard in Resources */,
+				6B70DD772192AEF600FDD1F2 /* Assets.xcassets in Resources */,
+				6B70DD722192AEF500FDD1F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4078171CC218D5C85DC8A58C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/googleapis/googleapis.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/googleapis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D86A2AAD200B644975775979 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiSeobApps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B70DD652192AEF500FDD1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B62A63521A253D000B5A444 /* AnimationsVC.swift in Sources */,
+				6B70DD862192AFA000FDD1F2 /* GoogleSpeech.swift in Sources */,
+				6B2B1C1B2193D82C005AF8F2 /* AudioController.swift in Sources */,
+				6B62A63321A2503900B5A444 /* AnimationCollection.swift in Sources */,
+				6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */,
+				6B2B1C162193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift in Sources */,
+				6B2B1C192193D820005AF8F2 /* SpeechRecognitionService.swift in Sources */,
+				6B70DD6F2192AEF500FDD1F2 /* ViewController.swift in Sources */,
+				6B70DD852192AFA000FDD1F2 /* EmbedSpeech.swift in Sources */,
+				6B70DD6D2192AEF500FDD1F2 /* AppDelegate.swift in Sources */,
+				6B70DD752192AEF500FDD1F2 /* JiSeobApps.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B70DD702192AEF500FDD1F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B70DD712192AEF500FDD1F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B70DD782192AEF600FDD1F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B70DD792192AEF600FDD1F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B70DD7C2192AEF600FDD1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B70DD7D2192AEF600FDD1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B70DD7F2192AEF600FDD1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 689KAW4595;
+				INFOPLIST_FILE = JiSeobApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiSeobJiSeobApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B70DD802192AEF600FDD1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 689KAW4595;
+				INFOPLIST_FILE = JiSeobApps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JiSeobJiSeobApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B70DD642192AEF500FDD1F2 /* Build configuration list for PBXProject "JiSeobApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B70DD7C2192AEF600FDD1F2 /* Debug */,
+				6B70DD7D2192AEF600FDD1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B70DD7E2192AEF600FDD1F2 /* Build configuration list for PBXNativeTarget "JiSeobApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B70DD7F2192AEF600FDD1F2 /* Debug */,
+				6B70DD802192AEF600FDD1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B70DD732192AEF500FDD1F2 /* JiSeobApps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B70DD742192AEF500FDD1F2 /* JiSeobApps.xcdatamodel */,
+			);
+			currentVersion = 6B70DD742192AEF500FDD1F2 /* JiSeobApps.xcdatamodel */;
+			path = JiSeobApps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B70DD612192AEF500FDD1F2 /* Project object */;
+}
