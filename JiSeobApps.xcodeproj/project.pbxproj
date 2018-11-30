@@ -23,6 +23,9 @@
 		6B70DD862192AFA000FDD1F2 /* GoogleSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */; };
 		6BAD128B21B0C4B600C6D9FE /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD128A21B0C4B600C6D9FE /* DelegateVC.swift */; };
 		6BAD128E21B0C5B500C6D9FE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD128D21B0C5B500C6D9FE /* AlertView.swift */; };
+		6BAD129121B0DA8900C6D9FE /* Rx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD129021B0DA8900C6D9FE /* Rx.storyboard */; };
+		6BAD129621B0DBCF00C6D9FE /* RxAddNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */; };
+		6BAD12AB21B1102C00C6D9FE /* RxCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */; };
 		A8D57C6936A5F03DF52B8161 /* Pods_JiSeobApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSpeech.swift; sourceTree = "<group>"; };
 		6BAD128A21B0C4B600C6D9FE /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
 		6BAD128D21B0C5B500C6D9FE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		6BAD129021B0DA8900C6D9FE /* Rx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rx.storyboard; sourceTree = "<group>"; };
+		6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAddNumberVC.swift; sourceTree = "<group>"; };
+		6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCalculatorVC.swift; sourceTree = "<group>"; };
 		7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.release.xcconfig"; sourceTree = "<group>"; };
 		9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +131,9 @@
 				6BAD128C21B0C4BF00C6D9FE /* DelegatePattern */,
 				6B62A63621A2549600B5A444 /* Animations */,
 				6B70DD872192AFA600FDD1F2 /* Speech */,
+				6BAD129421B0DBAD00C6D9FE /* RxSwift */,
 				6B70DD702192AEF500FDD1F2 /* Main.storyboard */,
+				6BAD129021B0DA8900C6D9FE /* Rx.storyboard */,
 				6B70DD762192AEF600FDD1F2 /* Assets.xcassets */,
 				6B70DD782192AEF600FDD1F2 /* LaunchScreen.storyboard */,
 				6B70DD7B2192AEF600FDD1F2 /* Info.plist */,
@@ -153,6 +161,15 @@
 				6BAD128D21B0C5B500C6D9FE /* AlertView.swift */,
 			);
 			path = DelegatePattern;
+			sourceTree = "<group>";
+		};
+		6BAD129421B0DBAD00C6D9FE /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */,
+				6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +234,7 @@
 			files = (
 				6B70DD7A2192AEF600FDD1F2 /* LaunchScreen.storyboard in Resources */,
 				6B70DD772192AEF600FDD1F2 /* Assets.xcassets in Resources */,
+				6BAD129121B0DA8900C6D9FE /* Rx.storyboard in Resources */,
 				6B70DD722192AEF500FDD1F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +254,9 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
@@ -250,6 +271,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DGActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
@@ -294,7 +318,9 @@
 				6B62A63521A253D000B5A444 /* AnimationsVC.swift in Sources */,
 				6B70DD862192AFA000FDD1F2 /* GoogleSpeech.swift in Sources */,
 				6B2B1C1B2193D82C005AF8F2 /* AudioController.swift in Sources */,
+				6BAD129621B0DBCF00C6D9FE /* RxAddNumberVC.swift in Sources */,
 				6B62A63321A2503900B5A444 /* AnimationCollection.swift in Sources */,
+				6BAD12AB21B1102C00C6D9FE /* RxCalculatorVC.swift in Sources */,
 				6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */,
 				6B2B1C162193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift in Sources */,
 				6B2B1C192193D820005AF8F2 /* SpeechRecognitionService.swift in Sources */,

@@ -67,9 +67,16 @@ class AlertView: UIView {
         self.addSubview(button)
         
         
+        
         self.backgroundColor = .blue
         self.layer.cornerRadius = 15
         self.layer.masksToBounds = true
+        
+        invalidateIntrinsicContentSize()
+    }
+    
+    override func invalidateIntrinsicContentSize() {
+        super.invalidateIntrinsicContentSize()
     }
     
     @objc func showAlert() {

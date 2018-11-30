@@ -8,6 +8,8 @@ target 'JiSeobApps' do
   # Pods for JiSeobApps
 	
   pod 'googleapis', :path => '.'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 pod 'DGActivityIndicatorView'
 

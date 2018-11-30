@@ -49,10 +49,17 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
   - DGActivityIndicatorView
   - googleapis (from `.`)
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -66,6 +73,9 @@ SPEC REPOS:
     - gRPC-RxLibrary
     - nanopb
     - Protobuf
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
 
 EXTERNAL SOURCES:
   googleapis:
@@ -83,7 +93,10 @@ SPEC CHECKSUMS:
   gRPC-RxLibrary: a4bfc6fbb4fb5ed45f85a2317435bc08ace76ac5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 0bcaf6222d7c16001cf0e833b6ad08264977c5d7
+PODFILE CHECKSUM: 7db4150afe15345433e7d9f7047d7b5656623723
 
 COCOAPODS: 1.5.3
