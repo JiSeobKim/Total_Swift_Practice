@@ -21,6 +21,8 @@
 		6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD812192AFA000FDD1F2 /* SturctList.swift */; };
 		6B70DD852192AFA000FDD1F2 /* EmbedSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD822192AFA000FDD1F2 /* EmbedSpeech.swift */; };
 		6B70DD862192AFA000FDD1F2 /* GoogleSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */; };
+		6BAD128B21B0C4B600C6D9FE /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD128A21B0C4B600C6D9FE /* DelegateVC.swift */; };
+		6BAD128E21B0C5B500C6D9FE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD128D21B0C5B500C6D9FE /* AlertView.swift */; };
 		A8D57C6936A5F03DF52B8161 /* Pods_JiSeobApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		6B70DD812192AFA000FDD1F2 /* SturctList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SturctList.swift; sourceTree = "<group>"; };
 		6B70DD822192AFA000FDD1F2 /* EmbedSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedSpeech.swift; sourceTree = "<group>"; };
 		6B70DD832192AFA000FDD1F2 /* GoogleSpeech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSpeech.swift; sourceTree = "<group>"; };
+		6BAD128A21B0C4B600C6D9FE /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
+		6BAD128D21B0C5B500C6D9FE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.release.xcconfig"; sourceTree = "<group>"; };
 		9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +122,7 @@
 			children = (
 				6B70DD6C2192AEF500FDD1F2 /* AppDelegate.swift */,
 				6B70DD6E2192AEF500FDD1F2 /* ViewController.swift */,
+				6BAD128C21B0C4BF00C6D9FE /* DelegatePattern */,
 				6B62A63621A2549600B5A444 /* Animations */,
 				6B70DD872192AFA600FDD1F2 /* Speech */,
 				6B70DD702192AEF500FDD1F2 /* Main.storyboard */,
@@ -139,6 +144,15 @@
 				6B2B1C1C2193DEF5005AF8F2 /* PodData */,
 			);
 			path = Speech;
+			sourceTree = "<group>";
+		};
+		6BAD128C21B0C4BF00C6D9FE /* DelegatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				6BAD128A21B0C4B600C6D9FE /* DelegateVC.swift */,
+				6BAD128D21B0C5B500C6D9FE /* AlertView.swift */,
+			);
+			path = DelegatePattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +298,8 @@
 				6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */,
 				6B2B1C162193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift in Sources */,
 				6B2B1C192193D820005AF8F2 /* SpeechRecognitionService.swift in Sources */,
+				6BAD128B21B0C4B600C6D9FE /* DelegateVC.swift in Sources */,
+				6BAD128E21B0C5B500C6D9FE /* AlertView.swift in Sources */,
 				6B70DD6F2192AEF500FDD1F2 /* ViewController.swift in Sources */,
 				6B70DD852192AFA000FDD1F2 /* EmbedSpeech.swift in Sources */,
 				6B70DD6D2192AEF500FDD1F2 /* AppDelegate.swift in Sources */,

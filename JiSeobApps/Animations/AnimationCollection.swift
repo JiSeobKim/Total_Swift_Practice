@@ -27,8 +27,10 @@ class RepeatVerticalMove: UIView {
     var speed:CGFloat = 1
     var randomColor : [UIColor] = [.red, .blue, .green, .yellow]
     
+    
     private var cellSize: CGFloat?
     private var cnt: Int?
+    private var objectSize: CGFloat!
     
     
     convenience init(size: CGFloat, color: UIColor, cnt: Int, padding: CGFloat = 0) {
@@ -76,7 +78,7 @@ class RepeatVerticalMove: UIView {
         
         let totalPadding = padding * CGFloat(cnt - 1)
         
-        let objectSize = (size - totalPadding) / CGFloat(cnt)
+        objectSize = (size - totalPadding) / CGFloat(cnt)
         
         
         let returnView = UIView(frame: CGRect(x: 0, y: 0, width: objectSize, height: objectSize))
@@ -146,30 +148,34 @@ class RepeatVerticalMove: UIView {
     
     func endingAnimation() {
         
-        let objectSize = cellSize! / CGFloat(cnt!)
+        
         
         for (c,row) in objectList.enumerated() {
-            
-            UIView.animate(withDuration: 1, delay: TimeInterval(0.1 * Double(c)), options: [], animations: {
-                
-                row.frame = CGRect(x: self.cellSize! / 2, y: 0, width: objectSize, height: objectSize)
-//                row.frame.origin.y = 0
-//                row.frame.origin.x = self.cellSize! / 2
-            }) { (bool) in
-                row.layer.removeAllAnimations()
-                
-                let factor = Float(c) * 1 / 5
-                let animation = self.rotateAnimation(factor, x: row.frame.width * 3.3, y: row.frame.height * 3, size: CGSize(width: self.cellSize!, height: self.cellSize!))
-                
-                
-                row.layer.add(animation, forKey: "animation")
-            }
-            
-            
-            
-            
+            UIView.animate(withDuration: 0.3, animations: {
+                    row.frame = CGRect(x: row.frame.origin.x, y: self.cellSize! / 2, width: self.objectSize, height: 0)
+                }, completion: { (bool) in
+                    row.layer.removeAllAnimations()
+                    row.layer.cornerRadius = self.objectSize / 2
+                    UIView.animate(withDuration: 0.5, animations: {
+                        row.frame.size.height = self.objectSize
+                        
+                    }, completion: { (bool) in
+                        UIView.animate(withDuration: 1, delay: TimeInterval(0.1 * Double(c)), options: [], animations: {
+                            
+                            row.frame = CGRect(x: self.cellSize! / 2, y: -self.objectSize, width: self.objectSize, height: self.objectSize)
+                        }) { (bool) in
+                            let factor = Float(c) * 1 / 5
+                            let animation = self.rotateAnimation(factor, x: row.frame.width * 3.3, y: row.frame.height * 3, size: CGSize(width: self.cellSize!, height: self.cellSize!))
+                            row.layer.add(animation, forKey: "animation")
+                        }
+                    })
+                    
+                    //
+                    
+                    
+                    
+                })
         }
-        
     }
     
     
@@ -181,6 +187,7 @@ class RepeatVerticalMove: UIView {
         let fromScale = 1 - rate
         let toScale = 0.2 + rate
         let timeFunc = CAMediaTimingFunction(controlPoints: 0.5, 0.15 + rate, 0.25, 1)
+        
         
         // Scale animation
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")

@@ -19,20 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nLm-kx-c9y">
-                                <rect key="frame" x="149" y="293.5" width="77" height="80"/>
+                                <rect key="frame" x="129.5" y="268.5" width="116" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH9-SQ-EPz">
-                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
                                         <state key="normal" title="Speech"/>
                                         <connections>
                                             <segue destination="Ya1-E4-cd5" kind="show" id="hCa-da-qfW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-xz-3zz">
-                                        <rect key="frame" x="0.0" y="50" width="77" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="116" height="30"/>
                                         <state key="normal" title="Animations"/>
                                         <connections>
                                             <segue destination="Nr3-Rh-xmP" kind="show" id="TWb-6f-6qF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-Ti-JVf">
+                                        <rect key="frame" x="0.0" y="100" width="116" height="30"/>
+                                        <state key="normal" title="Delegate Pattern"/>
+                                        <connections>
+                                            <segue destination="BKM-tN-3Ip" kind="show" id="745-XW-Ymd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -174,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8G-kK-x0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="2193"/>
+            <point key="canvasLocation" x="1073" y="1954"/>
         </scene>
         <!--Google-->
         <scene sceneID="ij4-Pc-j9t">
@@ -379,6 +386,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1o-LT-1D5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="1261"/>
+        </scene>
+        <!--DelegateVC-->
+        <scene sceneID="TyF-k4-z4h">
+            <objects>
+                <viewController id="BKM-tN-3Ip" customClass="DelegateVC" customModule="JiSeobApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QCw-dA-AJc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="W4d-rn-GcB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3E-Lx-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="2769"/>
         </scene>
     </scenes>
     <resources>
