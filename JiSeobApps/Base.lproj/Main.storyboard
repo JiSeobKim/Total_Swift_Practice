@@ -394,13 +394,29 @@
                     <view key="view" contentMode="scaleToFill" id="QCw-dA-AJc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="프로토콜을 이용해,  델리게이트 패턴을 구현 연습!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOM-Tg-yiW">
+                                <rect key="frame" x="0.0" y="456" width="375" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="211" id="p8i-o1-yLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W4d-rn-GcB" firstAttribute="trailing" secondItem="TOM-Tg-yiW" secondAttribute="trailing" id="6M6-ON-B8s"/>
+                            <constraint firstItem="W4d-rn-GcB" firstAttribute="bottom" secondItem="TOM-Tg-yiW" secondAttribute="bottom" id="ci4-ax-GoO"/>
+                            <constraint firstItem="TOM-Tg-yiW" firstAttribute="leading" secondItem="W4d-rn-GcB" secondAttribute="leading" id="jMF-VW-7uw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W4d-rn-GcB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3E-Lx-0e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="2769"/>
+            <point key="canvasLocation" x="1072.8" y="2768.3658170914546"/>
         </scene>
     </scenes>
     <resources>

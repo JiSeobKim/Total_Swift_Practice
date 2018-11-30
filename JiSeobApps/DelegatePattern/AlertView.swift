@@ -13,11 +13,17 @@ protocol AlertViewDelegate {
     func okTapAction() -> UIAlertAction?
     func cancelTapAction() -> UIAlertAction?
     func completionAction()
-    
-    var alertTitle:String? {get}
-    
-    var message:String? {get}
-    
+
+}
+
+extension AlertViewDelegate {
+    func cancelTapAction() -> UIAlertAction? {
+        let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        return cancel
+    }
+    func completionAction() {
+        
+    }
 }
 
 class AlertView: UIView {
@@ -25,8 +31,11 @@ class AlertView: UIView {
     var alertDelegate: AlertViewDelegate?
     
     var button: UIButton!
+    var titleStr: String!
+    var messageStr: String!
     
     private var vc: UIViewController!
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,16 +48,18 @@ class AlertView: UIView {
         config()
     }
     
-    convenience init(frame: CGRect, vc: UIViewController) {
+    convenience init(frame: CGRect, vc: UIViewController, title: String?, message: String?) {
         self.init(frame: frame)
         self.vc = vc
+        self.titleStr = title
+        self.messageStr = message
     }
     
     
     func config() {
         
         button = UIButton()
-        button.frame.size = CGSize(width: 40, height: 25)
+        button.frame.size = self.frame.size
         button.center = self.center
         button.setTitle("Alert!", for: .normal)
         button.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -57,13 +68,13 @@ class AlertView: UIView {
         
         
         self.backgroundColor = .blue
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = 15
         self.layer.masksToBounds = true
     }
     
     @objc func showAlert() {
         
-        let alert = UIAlertController(title: alertDelegate?.alertTitle, message: alertDelegate?.message, preferredStyle: .alert)
+        let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: .alert)
         
         if let okAction = alertDelegate?.okTapAction() {
             alert.addAction(okAction)
