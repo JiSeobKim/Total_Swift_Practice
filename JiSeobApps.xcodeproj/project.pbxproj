@@ -26,6 +26,7 @@
 		6BAD129121B0DA8900C6D9FE /* Rx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAD129021B0DA8900C6D9FE /* Rx.storyboard */; };
 		6BAD129621B0DBCF00C6D9FE /* RxAddNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */; };
 		6BAD12AB21B1102C00C6D9FE /* RxCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */; };
+		6BAD12AD21B3E07100C6D9FE /* RxCalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAD12AC21B3E07100C6D9FE /* RxCalModel.swift */; };
 		A8D57C6936A5F03DF52B8161 /* Pods_JiSeobApps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4581B58A64A048AEDA3D4806 /* Pods_JiSeobApps.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		6BAD129021B0DA8900C6D9FE /* Rx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rx.storyboard; sourceTree = "<group>"; };
 		6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAddNumberVC.swift; sourceTree = "<group>"; };
 		6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCalculatorVC.swift; sourceTree = "<group>"; };
+		6BAD12AC21B3E07100C6D9FE /* RxCalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCalModel.swift; sourceTree = "<group>"; };
 		7616531042D215FCA7F79013 /* Pods-JiSeobApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.release.xcconfig"; sourceTree = "<group>"; };
 		9BBF6D94067BE6D202E57B59 /* Pods-JiSeobApps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiSeobApps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiSeobApps/Pods-JiSeobApps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 			children = (
 				6BAD129521B0DBCF00C6D9FE /* RxAddNumberVC.swift */,
 				6BAD12AA21B1102C00C6D9FE /* RxCalculatorVC.swift */,
+				6BAD12AC21B3E07100C6D9FE /* RxCalModel.swift */,
 			);
 			path = RxSwift;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				6BAD129621B0DBCF00C6D9FE /* RxAddNumberVC.swift in Sources */,
 				6B62A63321A2503900B5A444 /* AnimationCollection.swift in Sources */,
 				6BAD12AB21B1102C00C6D9FE /* RxCalculatorVC.swift in Sources */,
+				6BAD12AD21B3E07100C6D9FE /* RxCalModel.swift in Sources */,
 				6B70DD842192AFA000FDD1F2 /* SturctList.swift in Sources */,
 				6B2B1C162193D2CF005AF8F2 /* GoogleSpeechStreamingVC.swift in Sources */,
 				6B2B1C192193D820005AF8F2 /* SpeechRecognitionService.swift in Sources */,

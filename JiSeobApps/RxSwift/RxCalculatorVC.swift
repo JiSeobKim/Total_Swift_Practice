@@ -41,13 +41,7 @@ class RxCalculatorVC: UIViewController {
     var isReplaceOperator = false
     
     
-    enum Oper: String {
-        case add = "+"
-        case sub = "-"
-        case mul = "X"
-        case div = "/"
-        case end = "="
-    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +64,7 @@ class RxCalculatorVC: UIViewController {
         self.logArray.append(contentsOf: [typing.description, input])
         
         let tempTyping = typing
-        self.typing = 0
+        
         
         let oper = Oper.init(rawValue: oldTemp)!
         
@@ -94,6 +88,7 @@ class RxCalculatorVC: UIViewController {
             result = temp
         }
         
+        self.typing = 0
         self.lbInput.text = input
         self.isReplaceOperator = true
     }
