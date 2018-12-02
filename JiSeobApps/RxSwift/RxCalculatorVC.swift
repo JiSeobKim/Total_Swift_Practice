@@ -38,6 +38,9 @@ class RxCalculatorVC: UIViewController {
     
     var oldOperator: String?
     var lastInputIsOperator = false
+    var isReplaceOperator = false
+    
+    
     enum Oper: String {
         case add = "+"
         case sub = "-"
@@ -53,11 +56,18 @@ class RxCalculatorVC: UIViewController {
     }
     
     func operatorNumber(input: String) {
-        self.logArray.append("\(typing.description) \(input) ")
         let oldTemp = self.oldOperator ?? "+"
         self.oldOperator = input
         
         
+        guard isReplaceOperator == false else {
+            self.logArray.removeLast()
+            self.logArray.append(input)
+            return
+        }
+        
+        
+        self.logArray.append(contentsOf: [typing.description, input])
         
         let tempTyping = typing
         self.typing = 0
@@ -85,6 +95,7 @@ class RxCalculatorVC: UIViewController {
         }
         
         self.lbInput.text = input
+        self.isReplaceOperator = true
     }
     
     
@@ -92,16 +103,11 @@ class RxCalculatorVC: UIViewController {
     @IBAction func buttonAction(_ sender: UIButton) {
         let text = sender.currentTitle ?? ""
         
-        
         if let num = Double(text) {
+            self.isReplaceOperator = false
             typing = (typing * 10) + num
         } else {
-            
             operatorNumber(input: text)
         }
-        
-        
-        
-        
     }
 }
